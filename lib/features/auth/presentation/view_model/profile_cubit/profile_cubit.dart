@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task_mange/features/auth/presentation/model/user_model.dart';
-import 'package:task_mange/features/auth/presentation/view_model/profile_state.dart';
+import 'package:task_mange/features/auth/presentation/view_model/profile_cubit/profile_state.dart';
 
 class ProfileCubit extends Cubit<ProfileState> {
   ProfileCubit() : super(ProfileInitial());

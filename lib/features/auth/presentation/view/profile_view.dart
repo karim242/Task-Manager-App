@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task_mange/features/auth/presentation/view/widgets/profile_body.dart';
 import 'package:task_mange/features/auth/presentation/view_model/profile_cubit/profile_cubit.dart';
-import 'package:task_mange/features/auth/presentation/view_model/profile_state.dart';
+import 'package:task_mange/features/auth/presentation/view_model/profile_cubit/profile_state.dart';
 
 class ProfileView extends StatelessWidget {
 

@@ -1,5 +1,4 @@
 
-import 'dart:convert';
 
 import 'package:dio/dio.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -27,7 +26,12 @@ return [];
     return [];
   }
 }
-
+ void deleteTask(int id) {
+    if (state is TaskLoaded) {
+      final updatedTasks = (state as TaskLoaded).tasks.where((task) => task.id != id).toList();
+      emit(TaskLoaded(updatedTasks));
+    }
+  }
 
 
 }
